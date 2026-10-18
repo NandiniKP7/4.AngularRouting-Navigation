@@ -1,0 +1,214 @@
+:host {
+  display: block;
+}
+
+/* Page */
+
+.roadmap-page {
+  width: 100%;
+}
+
+.page-header {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.page-header h2 {
+  margin: 0 0 8px;
+
+  color: #111827;
+
+  font-size: 32px;
+}
+
+.page-header p:last-child {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 15px;
+}
+
+
+/* Table container */
+
+.table-wrapper {
+  width: 100%;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  overflow-x: auto;
+}
+
+
+/* Table */
+
+.roadmap-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 850px;
+}
+
+
+/* Header */
+
+.roadmap-table thead {
+  background-color: #f8fafc;
+}
+
+.roadmap-table th {
+  padding: 16px 18px;
+
+  border-bottom: 2px solid #dbe3ee;
+
+  color: #374151;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+
+  text-align: left;
+}
+
+
+/* Column widths */
+
+.roadmap-table th:nth-child(1),
+.roadmap-table td:nth-child(1) {
+  width: 170px;
+}
+
+.roadmap-table th:nth-child(2),
+.roadmap-table td:nth-child(2) {
+  width: 300px;
+}
+
+
+/* Normal rows */
+
+.roadmap-table td {
+  padding: 18px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  color: #374151;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  vertical-align: top;
+}
+
+.roadmap-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* Topic */
+
+.roadmap-table td:nth-child(2) {
+  color: #111827;
+
+  font-weight: 600;
+}
+
+
+/* Date */
+
+.roadmap-table td:first-child {
+  color: #4b5563;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* Subtopic list */
+
+.roadmap-table ul {
+  margin: 0;
+
+  padding-left: 18px;
+}
+
+.roadmap-table li {
+  margin-bottom: 5px;
+}
+
+.roadmap-table li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Course / Stage separator */
+
+.section-row td {
+  padding: 11px 18px;
+
+  background-color: #eff6ff;
+
+  border-top: 2px solid #bfdbfe;
+  border-bottom: 1px solid #bfdbfe;
+
+  color: #1d4ed8 !important;
+
+  font-size: 13px;
+  font-weight: 700 !important;
+  letter-spacing: 0.4px;
+}
+
+
+/* Row hover */
+
+.roadmap-table tbody tr:not(.section-row):hover {
+  background-color: #f9fafb;
+}
+
+
+/* Inline code */
+
+.roadmap-table code {
+  padding: 2px 5px;
+
+  border-radius: 4px;
+
+  background-color: #f3f4f6;
+
+  color: #1f2937;
+
+  font-size: 13px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .page-header h2 {
+    font-size: 27px;
+  }
+
+  .table-wrapper {
+    border-radius: 8px;
+  }
+
+  .roadmap-table th,
+  .roadmap-table td {
+    padding: 14px;
+  }
+}

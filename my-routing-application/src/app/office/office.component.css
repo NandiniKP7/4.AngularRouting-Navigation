@@ -1,0 +1,264 @@
+:host {
+  display: block;
+}
+
+.office-page {
+  width: 100%;
+}
+
+.page-header {
+  margin-bottom: 25px;
+}
+
+.eyebrow {
+  margin: 0 0 5px;
+
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.page-header h2 {
+  margin: 0 0 8px;
+
+  color: #111827;
+
+  font-size: 32px;
+}
+
+.page-header p:last-child {
+  margin: 0;
+
+  color: #6b7280;
+}
+
+
+/* Goal */
+
+.goal-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+  padding: 20px;
+
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+
+  background: #eff6ff;
+}
+
+.goal-card > div {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+.goal-number {
+  color: #2563eb;
+
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.goal-card p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+
+/* Workflow */
+
+.workflow-card {
+  margin-bottom: 22px;
+  padding: 22px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  background: white;
+}
+
+.workflow-card h3 {
+  margin: 0 0 15px;
+
+  color: #111827;
+}
+
+.step {
+  display: grid;
+
+  grid-template-columns: 32px 1fr;
+
+  gap: 12px;
+
+  padding: 14px 0;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.step:last-child {
+  border-bottom: none;
+}
+
+.step > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.step h4 {
+  margin: 2px 0 5px;
+
+  color: #111827;
+}
+
+.step p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.step-heading {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.step-heading strong {
+  color: #2563eb;
+
+  font-size: 12px;
+}
+
+
+/* Waiting */
+
+.waiting-card {
+  margin-bottom: 22px;
+  padding: 20px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  background: white;
+}
+
+.waiting-card h3 {
+  margin: 0 0 14px;
+}
+
+.waiting-items {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.waiting-items span {
+  padding: 9px 12px;
+
+  border-radius: 7px;
+
+  background: #f3f4f6;
+
+  color: #374151;
+
+  font-size: 13px;
+}
+
+
+/* Learning */
+
+.learning-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 20px;
+
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+
+  background: #eff6ff;
+}
+
+.learning-card h3 {
+  margin: 0 0 5px;
+}
+
+.learning-card p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+.learning-card a {
+  flex-shrink: 0;
+
+  padding: 10px 16px;
+
+  border-radius: 7px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .goal-card,
+  .learning-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .learning-card a {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    text-align: center;
+  }
+
+  .step-heading {
+    flex-direction: column;
+
+    gap: 3px;
+  }
+}

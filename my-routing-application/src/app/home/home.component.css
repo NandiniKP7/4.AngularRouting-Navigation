@@ -1,0 +1,258 @@
+:host {
+  display: block;
+}
+
+
+/* =========================
+   PAGE
+   ========================= */
+
+.home-page {
+  width: 100%;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.page-header {
+  margin-bottom: 26px;
+}
+
+.eyebrow {
+  margin: 0 0 5px;
+
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.page-header h2 {
+  margin: 0 0 8px;
+
+  color: #111827;
+
+  font-size: 32px;
+}
+
+.page-header > p:last-child {
+  margin: 0;
+
+  color: #6b7280;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   SCHEDULE
+   ========================= */
+
+.schedule {
+  overflow: hidden;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  background-color: #ffffff;
+}
+
+
+/* =========================
+   ROW
+   ========================= */
+
+.schedule-row {
+  display: grid;
+
+  grid-template-columns: 180px 1fr;
+
+  gap: 22px;
+
+  padding: 20px 22px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.schedule-row:last-child {
+  border-bottom: none;
+}
+
+
+/* =========================
+   TIME
+   ========================= */
+
+.time {
+  padding-top: 2px;
+
+  color: #2563eb;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   ACTIVITY
+   ========================= */
+
+.activity h3 {
+  margin: 0 0 6px;
+
+  color: #111827;
+
+  font-size: 16px;
+}
+
+.activity p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+
+/* =========================
+   TASK LIST
+   ========================= */
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  margin-top: 8px;
+}
+
+.task-list span {
+  position: relative;
+
+  padding-left: 16px;
+
+  color: #6b7280;
+
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.task-list span::before {
+  position: absolute;
+
+  left: 0;
+
+  content: "•";
+
+  color: #2563eb;
+}
+
+
+/* =========================
+   OFFICE + LEARNING
+   ========================= */
+
+.highlight {
+  background-color: #f8fbff;
+}
+
+
+/* =========================
+   LINKS
+   ========================= */
+
+.page-link {
+  display: inline-block;
+
+  margin-top: 10px;
+
+  color: #2563eb;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.page-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   OFFICE BREAKS
+   ========================= */
+
+.office-breaks {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 10px;
+
+  margin-top: 16px;
+}
+
+.office-breaks > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+
+  padding: 11px 12px;
+
+  border-radius: 7px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e5e7eb;
+}
+
+.office-breaks strong {
+  color: #2563eb;
+
+  font-size: 12px;
+}
+
+.office-breaks span {
+  color: #4b5563;
+
+  font-size: 13px;
+}
+
+
+/* =========================
+   BEDTIME
+   ========================= */
+
+.bedtime-row {
+  background-color: #f9fafb;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 700px) {
+
+  .page-header h2 {
+    font-size: 28px;
+  }
+
+  .schedule-row {
+    grid-template-columns: 1fr;
+
+    gap: 7px;
+  }
+
+  .office-breaks {
+    grid-template-columns: 1fr;
+  }
+}
