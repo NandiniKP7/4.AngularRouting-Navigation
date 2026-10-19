@@ -1,6 +1,5 @@
 <header class="app-header">
   <div class="header-content">
-
     <div class="brand">
       <div class="brand-icon">✓</div>
 
@@ -11,21 +10,31 @@
     </div>
 
     <nav class="main-nav">
-      <a href="/home">Home</a>
-      <a href="/office">Office</a>
-      <a href="/learning">Learning</a>
-      <a href="/house-activities">Home Activities</a>
-      <a href="/kid">Kid</a>
+      <a [routerLink]="Home_Route" routerLinkActive="active-link" ariaCurrentWhenActive="page"
+        >Home</a
+      >
+      <a [routerLink]="Office_Route" routerLinkActive="active-link" ariaCurrentWhenActive="page"
+        >Office</a
+      >
+      <a [routerLink]="Learning_Route" routerLinkActive="active-link" ariaCurrentWhenActive="page"
+        >Learning</a
+      >
+      <a
+        [routerLink]="HouseActivities_Route"
+        routerLinkActive="active-link"
+        ariaCurrentWhenActive="page"
+        >Home Activities</a
+      >
+      <a [routerLink]="kid_Route" routerLinkActive="active-link" ariaCurrentWhenActive="page"
+        >Kid</a
+      >
     </nav>
-
   </div>
 </header>
 
 <main class="page-container">
-
   <!-- Angular places the matched route component here -->
   <router-outlet></router-outlet>
-
 </main>
 
 <footer class="app-footer">

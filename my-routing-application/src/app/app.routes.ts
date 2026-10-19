@@ -7,6 +7,12 @@ import { HouseActivitiesComponent } from './house-activities/house-activities.co
 import { AngularComponent } from './angular/angular.component';
 import { TypescriptComponent } from './typescript/typescript.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+export const Home_Route='home'
+export const Office_Route='office'
+export const Learning_Route='learning'
+export const kid_Route='kid'
+export const HouseActivities_Route='house-activities'
+
 export const routes: Routes = [
     {
         path:'home',
